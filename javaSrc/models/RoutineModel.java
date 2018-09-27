@@ -1,4 +1,4 @@
-package com.example.alamin.createviewroutine.activity.models;
+package com.example.alamin.createviewroutine.models;
 
 public class RoutineModel {
     private StringBuilder dayName= new StringBuilder();

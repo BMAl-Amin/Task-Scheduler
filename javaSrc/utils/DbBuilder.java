@@ -1,4 +1,4 @@
-package com.example.alamin.createviewroutine.activity.utils;
+package com.example.alamin.createviewroutine.utils;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -21,9 +21,9 @@ public class DbBuilder extends SQLiteOpenHelper {
     }
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        task_query= new StringBuilder("create table"+TABLE_TASK+" ("+COL_1+" text, "+COL[0]+" text, "+COL[1]+" text, "+COL[2]
+        task_query= new StringBuilder("create table "+TABLE_TASK+"( "+COL_1+" text, "+COL[0]+" text, "+COL[1]+" text, "+COL[2]
                 +" text, "+COL[3]+" text, "+COL[4]+" text)");
-        time_query= new StringBuilder("create table"+TABLE_TIME+" ("+COL_1+" text, "+COL[0]+" text, "+COL[1]+" text, "+COL[2]
+        time_query= new StringBuilder("create table "+TABLE_TIME+"( "+COL_1+" text, "+COL[0]+" text, "+COL[1]+" text, "+COL[2]
                 +" text, "+COL[3]+" text, "+COL[4]+" text)");
         sqLiteDatabase.execSQL(task_query.toString());
         sqLiteDatabase.execSQL(time_query.toString());

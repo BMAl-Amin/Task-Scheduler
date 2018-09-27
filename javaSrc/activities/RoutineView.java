@@ -1,13 +1,9 @@
-package com.example.alamin.createviewroutine.activity;
+package com.example.alamin.createviewroutine.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.Button;
-import android.widget.ListView;
-import android.widget.TextView;
 
 import com.example.alamin.createviewroutine.R;
-import com.example.alamin.createviewroutine.activity.models.RoutineModel;
 
 public class RoutineView extends AppCompatActivity {
 
